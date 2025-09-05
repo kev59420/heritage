@@ -16,7 +16,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/personnes",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "personnes"]
+              "path": ["api","kevin", "personnes"]
             }
           }
         },
@@ -28,7 +28,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/personnes/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "personnes", "1"]
+              "path": ["api","kevin", "personnes", "1"]
             }
           }
         },
@@ -49,7 +49,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/personnes",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "personnes"]
+              "path": ["api","kevin", "personnes"]
             }
           }
         },
@@ -70,7 +70,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/personnes/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "personnes", "1"]
+              "path": ["api","kevin", "personnes", "1"]
             }
           }
         },
@@ -82,7 +82,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/personnes/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "personnes", "1"]
+              "path": ["api","kevin", "personnes", "1"]
             }
           }
         }
@@ -99,7 +99,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/clients",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "clients"]
+              "path": ["api","kevin", "clients"]
             }
           }
         },
@@ -111,7 +111,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/clients/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "clients", "1"]
+              "path": ["api","kevin", "clients", "1"]
             }
           }
         },
@@ -123,7 +123,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/clients/numero/CLI001",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "clients", "numero", "CLI001"]
+              "path": ["api","kevin", "clients", "numero", "CLI001"]
             }
           }
         },
@@ -144,7 +144,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/clients",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "clients"]
+              "path": ["api","kevin", "clients"]
             }
           }
         },
@@ -165,7 +165,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/clients/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "clients", "1"]
+              "path": ["api","kevin", "clients", "1"]
             }
           }
         },
@@ -177,7 +177,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/clients/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "clients", "1"]
+              "path": ["api","kevin", "clients", "1"]
             }
           }
         }
@@ -194,7 +194,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/fournisseurs",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "fournisseurs"]
+              "path": ["api","kevin", "fournisseurs"]
             }
           }
         },
@@ -206,7 +206,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "fournisseurs", "1"]
+              "path": ["api","kevin", "fournisseurs", "1"]
             }
           }
         },
@@ -218,7 +218,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/fournisseurs/societe/TechCorp",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "fournisseurs", "societe", "TechCorp"]
+              "path": ["api","kevin", "fournisseurs", "societe", "TechCorp"]
             }
           }
         },
@@ -239,7 +239,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/fournisseurs",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "fournisseurs"]
+              "path": ["api","kevin", "fournisseurs"]
             }
           }
         },
@@ -260,7 +260,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "fournisseurs", "1"]
+              "path": ["api","kevin", "fournisseurs", "1"]
             }
           }
         },
@@ -272,7 +272,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "fournisseurs", "1"]
+              "path": ["api","kevin", "fournisseurs", "1"]
             }
           }
         }
@@ -289,7 +289,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/employes",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "employes"]
+              "path": ["api","kevin", "employes"]
             }
           }
         },
@@ -301,7 +301,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/employes/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "employes", "1"]
+              "path": ["api","kevin", "employes", "1"]
             }
           }
         },
@@ -313,7 +313,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/employes/numero/EMP001",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "employes", "numero", "EMP001"]
+              "path": ["api","kevin", "employes", "numero", "EMP001"]
             }
           }
         },
@@ -334,7 +334,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/employes",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "employes"]
+              "path": ["api","kevin", "employes"]
             }
           }
         },
@@ -355,7 +355,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/employes/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "employes", "1"]
+              "path": ["api","kevin", "employes", "1"]
             }
           }
         },
@@ -367,7 +367,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/employes/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "employes", "1"]
+              "path": ["api","kevin", "employes", "1"]
             }
           }
         }
@@ -384,7 +384,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/managers",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "managers"]
+              "path": ["api","kevin", "managers"]
             }
           }
         },
@@ -396,7 +396,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/managers/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "managers", "1"]
+              "path": ["api","kevin", "managers", "1"]
             }
           }
         },
@@ -408,7 +408,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/managers/departement/Informatique",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "managers", "departement", "Informatique"]
+              "path": ["api","kevin", "managers", "departement", "Informatique"]
             }
           }
         },
@@ -429,7 +429,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/managers",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "managers"]
+              "path": ["api","kevin", "managers"]
             }
           }
         },
@@ -450,7 +450,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/managers/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "managers", "1"]
+              "path": ["api","kevin", "managers", "1"]
             }
           }
         },
@@ -462,7 +462,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/managers/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "managers", "1"]
+              "path": ["api","kevin", "managers", "1"]
             }
           }
         }
@@ -479,7 +479,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens"]
+              "path": ["api","kevin", "techniciens"]
             }
           }
         },
@@ -491,7 +491,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens", "1"]
+              "path": ["api","kevin", "techniciens", "1"]
             }
           }
         },
@@ -503,7 +503,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens/specialite/Réseau",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens", "specialite", "Réseau"]
+              "path": ["api","kevin", "techniciens", "specialite", "Réseau"]
             }
           }
         },
@@ -515,7 +515,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens/niveau/3",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens", "niveau", "3"]
+              "path": ["api","kevin", "techniciens", "niveau", "3"]
             }
           }
         },
@@ -536,7 +536,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens"]
+              "path": ["api","kevin", "techniciens"]
             }
           }
         },
@@ -557,7 +557,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens", "1"]
+              "path": ["api","kevin", "techniciens", "1"]
             }
           }
         },
@@ -569,7 +569,7 @@
             "url": {
               "raw": "{{baseUrl}}/api/kevin/techniciens/1",
               "host": ["{{baseUrl}}"],
-              "path": ["api", "techniciens", "1"]
+              "path": ["api","kevin", "techniciens", "1"]
             }
           }
         }
