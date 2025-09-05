@@ -1,0 +1,20 @@
+version: "3.9"
+name: heritage
+services:
+  db-postgres-11:
+    image: postgres:11.7-alpine
+    container_name: "heritage-db"
+    ports:
+      - "4530:5432"
+    environment:
+      - POSTGRES_DB=heritage
+      - POSTGRES_SCHEMA=heritage
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./init_config_database.sh:/docker-entrypoint-initdb.d/init_config_database.sh
+      - heritagePgVolume:/var/lib/postgresql/data
+volumes:
+  heritagePgVolume: { }
+    # external: true
+    # name: heritagePgVolume

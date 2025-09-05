@@ -1,0 +1,585 @@
+{
+  "info": {
+    "name": "Heritage API Collection",
+    "description": "Collection d'endpoints pour l'API Heritage avec système d'héritage",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Personne",
+      "item": [
+        {
+          "name": "Get All Personnes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/personnes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "personnes"]
+            }
+          }
+        },
+        {
+          "name": "Get Personne by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/personnes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "personnes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Personne",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Jean Dupont\",\n  \"dateNaissance\": \"1985-03-15\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/personnes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "personnes"]
+            }
+          }
+        },
+        {
+          "name": "Update Personne",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Jean Dupont Modifié\",\n  \"dateNaissance\": \"1985-03-15\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/personnes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "personnes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Personne",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/personnes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "personnes", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Client",
+      "item": [
+        {
+          "name": "Get All Clients",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/clients",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "clients"]
+            }
+          }
+        },
+        {
+          "name": "Get Client by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/clients/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "clients", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Client by Numero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/clients/numero/CLI001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "clients", "numero", "CLI001"]
+            }
+          }
+        },
+        {
+          "name": "Create Client",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Marie Martin\",\n  \"dateNaissance\": \"1990-07-20\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-15\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/clients",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "clients"]
+            }
+          }
+        },
+        {
+          "name": "Update Client",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Marie Martin Modifiée\",\n  \"dateNaissance\": \"1990-07-20\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-15\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/clients/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "clients", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Client",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/clients/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "clients", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fournisseur",
+      "item": [
+        {
+          "name": "Get All Fournisseurs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/fournisseurs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "fournisseurs"]
+            }
+          }
+        },
+        {
+          "name": "Get Fournisseur by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "fournisseurs", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Fournisseurs by Societe",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/fournisseurs/societe/TechCorp",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "fournisseurs", "societe", "TechCorp"]
+            }
+          }
+        },
+        {
+          "name": "Create Fournisseur",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Pierre Durand\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp\",\n  \"contact\": \"pierre.durand@techcorp.com\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/fournisseurs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "fournisseurs"]
+            }
+          }
+        },
+        {
+          "name": "Update Fournisseur",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Pierre Durand Modifié\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp SA\",\n  \"contact\": \"pierre.durand@techcorp.com\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "fournisseurs", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Fournisseur",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "fournisseurs", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Employe",
+      "item": [
+        {
+          "name": "Get All Employes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/employes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "employes"]
+            }
+          }
+        },
+        {
+          "name": "Get Employe by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/employes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "employes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Employe by Numero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/employes/numero/EMP001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "employes", "numero", "EMP001"]
+            }
+          }
+        },
+        {
+          "name": "Create Employe",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Sophie Bernard\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/employes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "employes"]
+            }
+          }
+        },
+        {
+          "name": "Update Employe",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Sophie Bernard Modifiée\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/employes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "employes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Employe",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/employes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "employes", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Manager",
+      "item": [
+        {
+          "name": "Get All Managers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/managers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "managers"]
+            }
+          }
+        },
+        {
+          "name": "Get Manager by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/managers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "managers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Managers by Departement",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/managers/departement/Informatique",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "managers", "departement", "Informatique"]
+            }
+          }
+        },
+        {
+          "name": "Create Manager",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Alice Dupont\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"Informatique\",\n  \"budget\": 250000.00\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/managers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "managers"]
+            }
+          }
+        },
+        {
+          "name": "Update Manager",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Alice Dupont Modifiée\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"IT\",\n  \"budget\": 300000.00\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/managers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "managers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Manager",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/managers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "managers", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Technicien",
+      "item": [
+        {
+          "name": "Get All Techniciens",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens"]
+            }
+          }
+        },
+        {
+          "name": "Get Technicien by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Techniciens by Specialite",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens/specialite/Réseau",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens", "specialite", "Réseau"]
+            }
+          }
+        },
+        {
+          "name": "Get Techniciens by Niveau",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens/niveau/3",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens", "niveau", "3"]
+            }
+          }
+        },
+        {
+          "name": "Create Technicien",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Marc Dubois\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"Réseau\",\n  \"niveau\": 3\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens"]
+            }
+          }
+        },
+        {
+          "name": "Update Technicien",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Marc Dubois Modifié\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"Sécurité\",\n  \"niveau\": 4\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Technicien",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/kevin/techniciens/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "techniciens", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8082"
+    }
+  ]
+}

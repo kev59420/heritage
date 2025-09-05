@@ -1,0 +1,597 @@
+{
+  "info": {
+    "name": "Heritage Ludo API Collection",
+    "description": "Collection d'endpoints pour l'API Heritage Ludo avec système de relations ManyToOne",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "PersonneLudo",
+      "item": [
+        {
+          "name": "Get All PersonnesLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/personnes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "personnes"]
+            }
+          }
+        },
+        {
+          "name": "Get PersonneLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/personnes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "personnes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get PersonneLudo by Type",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/personnes/type/Client",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "personnes", "type", "Client"]
+            }
+          }
+        },
+        {
+          "name": "Create PersonneLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Nouveau_Type\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/personnes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "personnes"]
+            }
+          }
+        },
+        {
+          "name": "Update PersonneLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Type_Modifié\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/personnes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "personnes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete PersonneLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/personnes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "personnes", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ClientLudo",
+      "item": [
+        {
+          "name": "Get All ClientsLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/clients",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "clients"]
+            }
+          }
+        },
+        {
+          "name": "Get ClientLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/clients/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "clients", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get ClientLudo by Numero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/clients/numero/CLI001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "clients", "numero", "CLI001"]
+            }
+          }
+        },
+        {
+          "name": "Create ClientLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Jean Dupont\",\n  \"dateNaissance\": \"1985-03-15\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-10\",\n  \"personneLudoId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/clients",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "clients"]
+            }
+          }
+        },
+        {
+          "name": "Update ClientLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Jean Dupont Modifié\",\n  \"dateNaissance\": \"1985-03-15\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-10\",\n  \"personneLudoId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/clients/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "clients", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete ClientLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/clients/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "clients", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "FournisseurLudo",
+      "item": [
+        {
+          "name": "Get All FournisseursLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/fournisseurs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "fournisseurs"]
+            }
+          }
+        },
+        {
+          "name": "Get FournisseurLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/fournisseurs/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "fournisseurs", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get FournisseursLudo by Societe",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/fournisseurs/societe/TechCorp",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "fournisseurs", "societe", "TechCorp"]
+            }
+          }
+        },
+        {
+          "name": "Create FournisseurLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Pierre Martin\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp Solutions\",\n  \"contact\": \"pierre.martin@techcorp.com\",\n  \"personneLudoId\": 2\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/fournisseurs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "fournisseurs"]
+            }
+          }
+        },
+        {
+          "name": "Update FournisseurLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Pierre Martin Modifié\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp Solutions SA\",\n  \"contact\": \"pierre.martin@techcorp-solutions.com\",\n  \"personneLudoId\": 2\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/fournisseurs/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "fournisseurs", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete FournisseurLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/fournisseurs/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "fournisseurs", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "EmployeLudo",
+      "item": [
+        {
+          "name": "Get All EmployesLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/employes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "employes"]
+            }
+          }
+        },
+        {
+          "name": "Get EmployeLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/employes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "employes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get EmployeLudo by Numero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/employes/numero/EMP001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "employes", "numero", "EMP001"]
+            }
+          }
+        },
+        {
+          "name": "Create EmployeLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Sophie Bernard\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\",\n  \"personneLudoId\": 3\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/employes",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "employes"]
+            }
+          }
+        },
+        {
+          "name": "Update EmployeLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Sophie Bernard Modifiée\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\",\n  \"personneLudoId\": 3\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/employes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "employes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete EmployeLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/employes/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "employes", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ManagerLudo",
+      "item": [
+        {
+          "name": "Get All ManagersLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/managers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "managers"]
+            }
+          }
+        },
+        {
+          "name": "Get ManagerLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/managers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "managers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get ManagersLudo by Departement",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/managers/departement/Informatique",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "managers", "departement", "Informatique"]
+            }
+          }
+        },
+        {
+          "name": "Create ManagerLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Alice Dupont\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"Informatique\",\n  \"budget\": 250000.00,\n  \"personneLudoId\": 4\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/managers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "managers"]
+            }
+          }
+        },
+        {
+          "name": "Update ManagerLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Alice Dupont Modifiée\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"IT\",\n  \"budget\": 300000.00,\n  \"personneLudoId\": 4\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/managers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "managers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete ManagerLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/managers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "managers", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TechnicienLudo",
+      "item": [
+        {
+          "name": "Get All TechniciensLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens"]
+            }
+          }
+        },
+        {
+          "name": "Get TechnicienLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get TechniciensLudo by Specialite",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens/specialite/Réseau",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens", "specialite", "Réseau"]
+            }
+          }
+        },
+        {
+          "name": "Get TechniciensLudo by Niveau",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens/niveau/3",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens", "niveau", "3"]
+            }
+          }
+        },
+        {
+          "name": "Create TechnicienLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Marc Dubois\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"Sécurité Informatique\",\n  \"niveau\": 4,\n  \"personneLudoId\": 5\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens"]
+            }
+          }
+        },
+        {
+          "name": "Update TechnicienLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Marc Dubois Modifié\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"DevOps\",\n  \"niveau\": 5,\n  \"personneLudoId\": 5\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete TechnicienLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/ludo/techniciens/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "ludo", "techniciens", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8082"
+    }
+  ]
+}
