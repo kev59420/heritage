@@ -1,31 +1,26 @@
 # Order properties config : https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config
 
 # Configuration globale sur l'ensemble des environnements
+server:
+  port: 8082
 spring:
   application:
     name: Heritage
   datasource:
-    driver-class-name: 
     name: heritage
     username: postgres
     password: postgres
-    url: jdbc:postgresql://localhost:5432/heritage?currentSchema=heritage
-  jpa:
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-logging:
-  level:
-    org:
-      hibernate: DEBUG
-      hibernate.SQL: DEBUG
-      # hibernate.type.descriptor.sql.BasicBinder: TRACE
-      # hibernate.engine.transaction.internal.TransactionImpl: DEBUG
-server:
-  servlet:
-    session:
-      cookie:
-        secure: false
-server:
-  port: 8082
+    url: jdbc:postgresql://localhost:4530/heritage?currentSchema=heritage
+  # jpa:
+  #   show-sql: true
+  #   properties:
+  #     hibernate:
+  #       format_sql: true
+  #       dialect: org.hibernate.dialect.PostgreSQLDialect
+# logging:
+#   level:
+#     org:
+#       hibernate: DEBUG
+#       hibernate.SQL: DEBUG
+#       hibernate.type.descriptor.sql.BasicBinder: TRACE
+#       hibernate.engine.transaction.internal.TransactionImpl: DEBUG

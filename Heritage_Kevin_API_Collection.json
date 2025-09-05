@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "Heritage API Collection",
+    "name": "Heritage Kevin API Collection",
     "description": "Collection d'endpoints pour l'API Heritage avec système d'héritage",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
