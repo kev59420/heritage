@@ -29,7 +29,7 @@ public class EmployeLudo {
     @Column(name = "date_embauche", nullable = false)
     private LocalDate dateEmbauche;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personneludoid", nullable = false)
     private PersonneLudo personneLudo;
 

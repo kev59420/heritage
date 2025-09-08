@@ -29,7 +29,7 @@ public class FournisseurLudo {
     @Column(name = "contact", length = 100)
     private String contact;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personneludoid", nullable = false)
     private PersonneLudo personneLudo;
 

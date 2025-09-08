@@ -29,7 +29,7 @@ public class ClientLudo {
     @Column(name = "date_inscription", nullable = false)
     private LocalDate dateInscription;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personneludoid", nullable = false)
     private PersonneLudo personneLudo;
 

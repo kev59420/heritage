@@ -14,8 +14,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/personnes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/personnes",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "personnes"]
             }
           }
@@ -26,8 +26,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/personnes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/personnes/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "personnes", "1"]
             }
           }
@@ -38,8 +38,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/personnes/type/Client",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/personnes/type/Client",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "personnes", "type", "Client"]
             }
           }
@@ -59,8 +59,8 @@
               "raw": "{\n  \"type\": \"Nouveau_Type\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/personnes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/personnes",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "personnes"]
             }
           }
@@ -80,8 +80,8 @@
               "raw": "{\n  \"type\": \"Type_Modifié\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/personnes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/personnes/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "personnes", "1"]
             }
           }
@@ -92,8 +92,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/personnes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/personnes/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "personnes", "1"]
             }
           }
@@ -109,8 +109,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/clients",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/clients",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "clients"]
             }
           }
@@ -121,8 +121,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/clients/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/clients/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "clients", "1"]
             }
           }
@@ -133,8 +133,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/clients/numero/CLI001",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/clients/numero/CLI001",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "clients", "numero", "CLI001"]
             }
           }
@@ -154,8 +154,8 @@
               "raw": "{\n  \"nom\": \"Jean Dupont\",\n  \"dateNaissance\": \"1985-03-15\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-10\",\n  \"personneLudoId\": 1\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/clients",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/clients",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "clients"]
             }
           }
@@ -175,8 +175,8 @@
               "raw": "{\n  \"nom\": \"Jean Dupont Modifié\",\n  \"dateNaissance\": \"1985-03-15\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-10\",\n  \"personneLudoId\": 1\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/clients/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/clients/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "clients", "1"]
             }
           }
@@ -187,8 +187,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/clients/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/clients/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "clients", "1"]
             }
           }
@@ -204,8 +204,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/fournisseurs",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/fournisseurs",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "fournisseurs"]
             }
           }
@@ -216,8 +216,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/fournisseurs/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/fournisseurs/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "fournisseurs", "1"]
             }
           }
@@ -228,8 +228,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/fournisseurs/societe/TechCorp",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/fournisseurs/societe/TechCorp",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "fournisseurs", "societe", "TechCorp"]
             }
           }
@@ -249,8 +249,8 @@
               "raw": "{\n  \"nom\": \"Pierre Martin\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp Solutions\",\n  \"contact\": \"pierre.martin@techcorp.com\",\n  \"personneLudoId\": 2\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/fournisseurs",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/fournisseurs",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "fournisseurs"]
             }
           }
@@ -270,8 +270,8 @@
               "raw": "{\n  \"nom\": \"Pierre Martin Modifié\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp Solutions SA\",\n  \"contact\": \"pierre.martin@techcorp-solutions.com\",\n  \"personneLudoId\": 2\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/fournisseurs/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/fournisseurs/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "fournisseurs", "1"]
             }
           }
@@ -282,8 +282,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/fournisseurs/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/fournisseurs/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "fournisseurs", "1"]
             }
           }
@@ -299,8 +299,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/employes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/employes",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "employes"]
             }
           }
@@ -311,8 +311,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/employes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/employes/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "employes", "1"]
             }
           }
@@ -323,8 +323,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/employes/numero/EMP001",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/employes/numero/EMP001",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "employes", "numero", "EMP001"]
             }
           }
@@ -344,8 +344,8 @@
               "raw": "{\n  \"nom\": \"Sophie Bernard\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\",\n  \"personneLudoId\": 3\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/employes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/employes",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "employes"]
             }
           }
@@ -365,8 +365,8 @@
               "raw": "{\n  \"nom\": \"Sophie Bernard Modifiée\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\",\n  \"personneLudoId\": 3\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/employes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/employes/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "employes", "1"]
             }
           }
@@ -377,8 +377,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/employes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/employes/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "employes", "1"]
             }
           }
@@ -394,8 +394,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/managers",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/managers",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "managers"]
             }
           }
@@ -406,8 +406,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/managers/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/managers/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "managers", "1"]
             }
           }
@@ -418,8 +418,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/managers/departement/Informatique",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/managers/departement/Informatique",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "managers", "departement", "Informatique"]
             }
           }
@@ -439,8 +439,8 @@
               "raw": "{\n  \"nom\": \"Alice Dupont\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"Informatique\",\n  \"budget\": 250000.00,\n  \"personneLudoId\": 4\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/managers",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/managers",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "managers"]
             }
           }
@@ -460,8 +460,8 @@
               "raw": "{\n  \"nom\": \"Alice Dupont Modifiée\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"IT\",\n  \"budget\": 300000.00,\n  \"personneLudoId\": 4\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/managers/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/managers/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "managers", "1"]
             }
           }
@@ -472,8 +472,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/managers/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/managers/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "managers", "1"]
             }
           }
@@ -489,8 +489,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens"]
             }
           }
@@ -501,8 +501,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens", "1"]
             }
           }
@@ -513,8 +513,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens/specialite/Réseau",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens/specialite/Réseau",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens", "specialite", "Réseau"]
             }
           }
@@ -525,8 +525,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens/niveau/3",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens/niveau/3",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens", "niveau", "3"]
             }
           }
@@ -546,8 +546,8 @@
               "raw": "{\n  \"nom\": \"Marc Dubois\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"Sécurité Informatique\",\n  \"niveau\": 4,\n  \"personneLudoId\": 5\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens"]
             }
           }
@@ -567,8 +567,8 @@
               "raw": "{\n  \"nom\": \"Marc Dubois Modifié\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"DevOps\",\n  \"niveau\": 5,\n  \"personneLudoId\": 5\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens", "1"]
             }
           }
@@ -579,8 +579,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/ludo/techniciens/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/ludo/techniciens/1",
+              "host": ["localhost:8082"],
               "path": ["api", "ludo", "techniciens", "1"]
             }
           }

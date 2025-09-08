@@ -14,8 +14,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/personnes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/personnes",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "personnes"]
             }
           }
@@ -26,8 +26,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/personnes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/personnes/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "personnes", "1"]
             }
           }
@@ -47,8 +47,8 @@
               "raw": "{\n  \"nom\": \"Jean Dupont\",\n  \"dateNaissance\": \"1985-03-15\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/personnes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/personnes",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "personnes"]
             }
           }
@@ -68,8 +68,8 @@
               "raw": "{\n  \"nom\": \"Jean Dupont Modifié\",\n  \"dateNaissance\": \"1985-03-15\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/personnes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/personnes/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "personnes", "1"]
             }
           }
@@ -80,8 +80,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/personnes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/personnes/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "personnes", "1"]
             }
           }
@@ -97,8 +97,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/clients",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/clients",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "clients"]
             }
           }
@@ -109,8 +109,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/clients/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/clients/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "clients", "1"]
             }
           }
@@ -121,8 +121,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/clients/numero/CLI001",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/clients/numero/CLI001",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "clients", "numero", "CLI001"]
             }
           }
@@ -142,8 +142,8 @@
               "raw": "{\n  \"nom\": \"Marie Martin\",\n  \"dateNaissance\": \"1990-07-20\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-15\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/clients",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/clients",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "clients"]
             }
           }
@@ -163,8 +163,8 @@
               "raw": "{\n  \"nom\": \"Marie Martin Modifiée\",\n  \"dateNaissance\": \"1990-07-20\",\n  \"numeroClient\": \"CLI003\",\n  \"dateInscription\": \"2023-01-15\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/clients/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/clients/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "clients", "1"]
             }
           }
@@ -175,8 +175,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/clients/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/clients/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "clients", "1"]
             }
           }
@@ -192,8 +192,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/fournisseurs",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/fournisseurs",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "fournisseurs"]
             }
           }
@@ -204,8 +204,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/fournisseurs/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "fournisseurs", "1"]
             }
           }
@@ -216,8 +216,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/fournisseurs/societe/TechCorp",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/fournisseurs/societe/TechCorp",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "fournisseurs", "societe", "TechCorp"]
             }
           }
@@ -237,8 +237,8 @@
               "raw": "{\n  \"nom\": \"Pierre Durand\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp\",\n  \"contact\": \"pierre.durand@techcorp.com\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/fournisseurs",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/fournisseurs",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "fournisseurs"]
             }
           }
@@ -258,8 +258,8 @@
               "raw": "{\n  \"nom\": \"Pierre Durand Modifié\",\n  \"dateNaissance\": \"1975-12-10\",\n  \"societe\": \"TechCorp SA\",\n  \"contact\": \"pierre.durand@techcorp.com\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/fournisseurs/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "fournisseurs", "1"]
             }
           }
@@ -270,8 +270,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/fournisseurs/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/fournisseurs/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "fournisseurs", "1"]
             }
           }
@@ -287,8 +287,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/employes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/employes",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "employes"]
             }
           }
@@ -299,8 +299,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/employes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/employes/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "employes", "1"]
             }
           }
@@ -311,8 +311,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/employes/numero/EMP001",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/employes/numero/EMP001",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "employes", "numero", "EMP001"]
             }
           }
@@ -332,8 +332,8 @@
               "raw": "{\n  \"nom\": \"Sophie Bernard\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/employes",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/employes",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "employes"]
             }
           }
@@ -353,8 +353,8 @@
               "raw": "{\n  \"nom\": \"Sophie Bernard Modifiée\",\n  \"dateNaissance\": \"1988-05-30\",\n  \"numeroEmploye\": \"EMP004\",\n  \"dateEmbauche\": \"2022-03-01\"\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/employes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/employes/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "employes", "1"]
             }
           }
@@ -365,8 +365,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/employes/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/employes/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "employes", "1"]
             }
           }
@@ -382,8 +382,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/managers",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/managers",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "managers"]
             }
           }
@@ -394,8 +394,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/managers/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/managers/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "managers", "1"]
             }
           }
@@ -406,8 +406,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/managers/departement/Informatique",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/managers/departement/Informatique",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "managers", "departement", "Informatique"]
             }
           }
@@ -427,8 +427,8 @@
               "raw": "{\n  \"nom\": \"Alice Dupont\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"Informatique\",\n  \"budget\": 250000.00\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/managers",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/managers",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "managers"]
             }
           }
@@ -448,8 +448,8 @@
               "raw": "{\n  \"nom\": \"Alice Dupont Modifiée\",\n  \"dateNaissance\": \"1980-05-12\",\n  \"numeroEmploye\": \"EMP005\",\n  \"dateEmbauche\": \"2015-09-01\",\n  \"departement\": \"IT\",\n  \"budget\": 300000.00\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/managers/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/managers/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "managers", "1"]
             }
           }
@@ -460,8 +460,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/managers/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/managers/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "managers", "1"]
             }
           }
@@ -477,8 +477,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens"]
             }
           }
@@ -489,8 +489,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens", "1"]
             }
           }
@@ -501,8 +501,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens/specialite/Réseau",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens/specialite/Réseau",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens", "specialite", "Réseau"]
             }
           }
@@ -513,8 +513,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens/niveau/3",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens/niveau/3",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens", "niveau", "3"]
             }
           }
@@ -534,8 +534,8 @@
               "raw": "{\n  \"nom\": \"Marc Dubois\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"Réseau\",\n  \"niveau\": 3\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens"]
             }
           }
@@ -555,8 +555,8 @@
               "raw": "{\n  \"nom\": \"Marc Dubois Modifié\",\n  \"dateNaissance\": \"1992-08-15\",\n  \"numeroEmploye\": \"EMP006\",\n  \"dateEmbauche\": \"2020-06-01\",\n  \"specialite\": \"Sécurité\",\n  \"niveau\": 4\n}"
             },
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens", "1"]
             }
           }
@@ -567,8 +567,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/api/kevin/techniciens/1",
-              "host": ["{{baseUrl}}"],
+              "raw": "localhost:8082/api/kevin/techniciens/1",
+              "host": ["localhost:8082"],
               "path": ["api","kevin", "techniciens", "1"]
             }
           }

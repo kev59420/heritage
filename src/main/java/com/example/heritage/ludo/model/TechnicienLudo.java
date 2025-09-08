@@ -35,7 +35,7 @@ public class TechnicienLudo {
     @Column(name = "niveau")
     private Integer niveau;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personneludoid", nullable = false)
     private PersonneLudo personneLudo;
 

@@ -36,7 +36,7 @@ public class ManagerLudo {
     @Column(name = "budget", precision = 12, scale = 2)
     private BigDecimal budget;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personneludoid", nullable = false)
     private PersonneLudo personneLudo;
 
