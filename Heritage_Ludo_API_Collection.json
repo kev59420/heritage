@@ -586,6 +586,254 @@
           }
         }
       ]
+    },
+    {
+      "name": "ProduitsLudo",
+      "item": [
+        {
+          "name": "Get All ProduitsLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit"]
+            }
+          }
+        },
+        {
+          "name": "Get ProduitsLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get ProduitsLudo by Categorie",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit/categorie/Informatique",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit", "categorie", "Informatique"]
+            }
+          }
+        },
+        {
+          "name": "Search ProduitsLudo by Nom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit/search/Ordinateur",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit", "search", "Ordinateur"]
+            }
+          }
+        },
+        {
+          "name": "Get ProduitsLudo by Stock",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit/stock/20",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit", "stock", "20"]
+            }
+          }
+        },
+        {
+          "name": "Create ProduitsLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Nouveau Produit Ludo\",\n  \"description\": \"Description du nouveau produit Ludo\",\n  \"prix\": 199.99,\n  \"stock\": 50,\n  \"categorie\": \"Électronique\",\n  \"personneLudoId\": 6\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit"]
+            }
+          }
+        },
+        {
+          "name": "Update ProduitsLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Produit Ludo Modifié\",\n  \"description\": \"Description mise à jour\",\n  \"prix\": 249.99,\n  \"stock\": 75,\n  \"categorie\": \"High-Tech\",\n  \"personneLudoId\": 6\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete ProduitsLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/produit/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "produit", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "CommandesLudo",
+      "item": [
+        {
+          "name": "Get All CommandesLudo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande"]
+            }
+          }
+        },
+        {
+          "name": "Get CommandesLudo by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get CommandesLudo by Client",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande/client/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande", "client", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get CommandesLudo by Date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande/date/2024-01-18",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande", "date", "2024-01-18"]
+            }
+          }
+        },
+        {
+          "name": "Get CommandesLudo by Period",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande/period?startDate=2024-01-01&endDate=2024-12-31",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande", "period"],
+              "query": [
+                {
+                  "key": "startDate",
+                  "value": "2024-01-01"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2024-12-31"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create CommandesLudo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateCommande\": \"2024-09-09\",\n  \"quantite\": 2,\n  \"prixUnitaire\": 899.99,\n  \"clientLudoId\": 1,\n  \"produitId\": 1\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande"]
+            }
+          }
+        },
+        {
+          "name": "Update CommandesLudo",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateCommande\": \"2024-09-10\",\n  \"quantite\": 3,\n  \"prixUnitaire\": 799.99,\n  \"clientLudoId\": 1,\n  \"produitId\": 1\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete CommandesLudo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/ludo/commande/1",
+              "host": ["localhost:8082"],
+              "path": ["api", "ludo", "commande", "1"]
+            }
+          }
+        }
+      ]
     }
   ],
   "variable": [

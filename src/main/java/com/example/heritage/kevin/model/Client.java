@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Table(name = "client", schema = "heritage")
@@ -19,6 +20,9 @@ public class Client extends Personne {
 
     @Column(name = "date_inscription", nullable = false)
     private LocalDate dateInscription;
+
+    // @OneToMany(mappedBy = "client", fetch = FetchType.LAZY)
+    // private Set<Commande> commandes;
 
     public Client(String nom, LocalDate dateNaissance, String numeroClient, LocalDate dateInscription) {
         super(nom, dateNaissance);

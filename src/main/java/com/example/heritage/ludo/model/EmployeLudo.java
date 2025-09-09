@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "employeludo", schema = "heritage")
+@Table(name = "employe_ludo", schema = "heritage")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -30,7 +30,7 @@ public class EmployeLudo {
     private LocalDate dateEmbauche;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "personneludoid", nullable = false)
+    @JoinColumn(name = "personne_ludo_id", nullable = false)
     private PersonneLudo personneLudo;
 
     public EmployeLudo(String nom, LocalDate dateNaissance, String numeroEmploye, 

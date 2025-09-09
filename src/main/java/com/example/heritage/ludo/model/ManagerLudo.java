@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "managerludo", schema = "heritage")
+@Table(name = "manager_ludo", schema = "heritage")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -37,7 +37,7 @@ public class ManagerLudo {
     private BigDecimal budget;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "personneludoid", nullable = false)
+    @JoinColumn(name = "personne_ludo_id", nullable = false)
     private PersonneLudo personneLudo;
 
     public ManagerLudo(String nom, LocalDate dateNaissance, String numeroEmploye, 

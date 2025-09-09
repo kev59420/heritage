@@ -574,6 +574,254 @@
           }
         }
       ]
+    },
+    {
+      "name": "Produits",
+      "item": [
+        {
+          "name": "Get All Produits",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit"]
+            }
+          }
+        },
+        {
+          "name": "Get Produits by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Produits by Categorie",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit/categorie/Informatique",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit", "categorie", "Informatique"]
+            }
+          }
+        },
+        {
+          "name": "Search Produits by Nom",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit/search/Ordinateur",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit", "search", "Ordinateur"]
+            }
+          }
+        },
+        {
+          "name": "Get Produits by Stock",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit/stock/20",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit", "stock", "20"]
+            }
+          }
+        },
+        {
+          "name": "Create Produits",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Nouveau Produit\",\n  \"description\": \"Description du nouveau produit\",\n  \"prix\": 199.99,\n  \"stock\": 50,\n  \"categorie\": \"Électronique\"\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit"]
+            }
+          }
+        },
+        {
+          "name": "Update Produits",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Produit Modifié\",\n  \"description\": \"Description mise à jour\",\n  \"prix\": 249.99,\n  \"stock\": 75,\n  \"categorie\": \"High-Tech\"\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Produits",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/produit/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "produit", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commandes",
+      "item": [
+        {
+          "name": "Get All Commandes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande"]
+            }
+          }
+        },
+        {
+          "name": "Get Commandes by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Commandes by Client",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande/client/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande", "client", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Commandes by Date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande/date/2024-01-15",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande", "date", "2024-01-15"]
+            }
+          }
+        },
+        {
+          "name": "Get Commandes by Period",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande/period?startDate=2024-01-01&endDate=2024-12-31",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande", "period"],
+              "query": [
+                {
+                  "key": "startDate",
+                  "value": "2024-01-01"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2024-12-31"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Commandes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateCommande\": \"2024-09-09\",\n  \"quantite\": 2,\n  \"prixUnitaire\": 899.99,\n  \"clientId\": 4,\n  \"produitId\": 1\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande"]
+            }
+          }
+        },
+        {
+          "name": "Update Commandes",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"dateCommande\": \"2024-09-10\",\n  \"quantite\": 3,\n  \"prixUnitaire\": 799.99,\n  \"clientId\": 4,\n  \"produitId\": 1\n}"
+            },
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Commandes",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8082/api/kevin/commande/1",
+              "host": ["localhost:8082"],
+              "path": ["api","kevin", "commande", "1"]
+            }
+          }
+        }
+      ]
     }
   ],
   "variable": [
